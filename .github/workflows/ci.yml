@@ -33,4 +33,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: bakabruh/devops-ci:latest
+        tags: ghcr.io/bakabruh/devops-ci:latest
