@@ -28,3 +28,9 @@ jobs:
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ secrets.DOCKER_TOKEN }}
+    - name: Build and push image
+      uses: docker/build-push-action@v4
+      with:
+        context: .
+        push: true
+        tags: ${{ github.actor }}/devops-ci:latest
